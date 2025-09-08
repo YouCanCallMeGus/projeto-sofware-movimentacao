@@ -52,7 +52,7 @@ jobs:
           script: |
             docker stop stocks
             docker rm --force stocks
-            docker run -d -p 8080:8080 --name movimentações youcancallmegus/movimentacoes-ci:${{ github.sha }}
+            docker run -d -p 8080:8080 --name movimentacoes youcancallmegus/movimentacoes-ci:${{ github.sha }}
 
       # - name: Install dependencies
       #   run: pip install -r requirements.txt
